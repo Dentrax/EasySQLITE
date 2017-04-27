@@ -3,15 +3,11 @@
 ### EasySQLITE: An EASY and ADVANCED way to handle SQLITE!
 
 [What It Is](#what-it-is)
-
 [How To Use](#how-to-use)
-
+**-**
 [About](#about)  
-
 [Copyright & Licensing](#copyright--licensing)  
-
 [Contributing](#contributing)  
-
 [Contact](#contact) 
 
 ## What It Is
