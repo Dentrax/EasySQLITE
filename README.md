@@ -2,8 +2,8 @@
 
 ### EasySQLITE: An EASY and ADVANCED way to handle SQLITE!
 
-[What It Is](#what-it-is)
-[How To User](#how-to-use)
+[What It Is](#what--it--is)
+[How To User](#how--to--use)
 [About](#about)  
 [Copyright & Licensing](#copyright--licensing)  
 [Contributing](#contributing)  
@@ -21,6 +21,9 @@ Controls and wizards are available for users to:
 * Easy way to create and control SQLITE instance insted of class inheritance for every SQLITE DB.
 
 ## How To Use
+
+**Single line initializer : SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, List<SQLITECreateInfo>, List<SQLITEUpgradeInfo>));**
+
 
 ```c#
 final List<SQLITECreateInfo> sql_createList = new ArrayList<SQLITECreateInfo>(){{
