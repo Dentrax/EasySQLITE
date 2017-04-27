@@ -15,7 +15,7 @@ EasySQLITE was created to serve three purposes:
 
 3. Instead of writing long and complex code, it provides the simplest and easiest way.
 
-**However, our true ultimate goal is to produce easy and life-saver libraries in any language
+**However, our true ultimate goal is to produce easy and life-saver libraries in any language**
 
 EasySQLITE was created by Furkan 'Dentrax' Türkal
 
