@@ -2,11 +2,16 @@
 
 ### EasySQLITE: An EASY and ADVANCED way to handle SQLITE!
 
-[What It Is](#what--it--is)
-[How To User](#how--to--use)
+[What It Is](#what-it-is)
+
+[How To User](#how-to-use)
+
 [About](#about)  
+
 [Copyright & Licensing](#copyright--licensing)  
+
 [Contributing](#contributing)  
+
 [Contact](#contact) 
 
 ## What It Is
@@ -22,7 +27,7 @@ Controls and wizards are available for users to:
 
 ## How To Use
 
-**Single line initializer : SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, List<SQLITECreateInfo>, List<SQLITEUpgradeInfo>));**
+**Single line initializer : SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, SQLITECreateInfo, SQLITEUpgradeInfo));**
 
 
 ```c#
