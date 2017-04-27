@@ -2,10 +2,61 @@
 
 ### EasySQLITE: An EASY and ADVANCED way to handle SQLITE!
 
+[What It Is](#what-it-is)
+[How To User](#how-to-use)
 [About](#about)  
 [Copyright & Licensing](#copyright--licensing)  
 [Contributing](#contributing)  
 [Contact](#contact) 
+
+## What It Is
+
+EasySQLITE for SQLite is a high quality, simple, open source tool to
+create, design, and edit database files compatible with SQLite.
+
+Controls and wizards are available for users to:
+
+* Create and compact SQLITE controller singleton classes
+* Create, define, modify, update and delete tables
+* Easy way to create and control SQLITE instance insted of class inheritance for every SQLITE DB.
+
+## How To Use
+
+```c#
+final List<SQLITECreateInfo> sql_createList = new ArrayList<SQLITECreateInfo>(){{
+ //Create a new TABLE with these queries
+ add(new SQLITECreateInfo("TABLE1_NAME", new ArrayList<String>(){{
+     add("QUERY1");
+     add("QUERY2");
+ }}));
+
+ //Create a new TABLE with these queries
+ add(new SQLITECreateInfo("TABLE2_NAME", new ArrayList<String>(){{
+     add("QUERY1");
+     add("QUERY2");
+ }}));
+}};
+
+final List<SQLITEUpgradeInfo> sql_upgradeList = new ArrayList<SQLITEUpgradeInfo>(){{
+ //Run this queries when upgrade version 0 to 1
+ add(new SQLITEUpgradeInfo(0, 1, new ArrayList<String>(){{
+     add("QUERY1");
+     add("QUERY2");
+ }}));
+
+ //Run this queries when upgrade version 1 to 2
+ add(new SQLITEUpgradeInfo(1, 2, new ArrayList<String>(){{
+     add("QUERY1");
+     add("QUERY2");
+ }}));
+}};
+
+//SQLITESetting class. Parameters : (DB_NAME, VERSION, List<SQLITECreateInfo>, List<SQLITEUpgradeInfo>)
+final SQLITESetting sql_setting = new SQLITESetting("DB_NAME", 1, sql_createList, sql_upgradeList);
+
+//Main initializer
+SQLITE sql = new SQLITE(CONTEXT, sql_setting);
+```
 
 ## About
 
