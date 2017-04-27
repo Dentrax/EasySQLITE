@@ -4,7 +4,7 @@
 
 [What It Is](#what-it-is)
 
-[How To User](#how-to-use)
+[How To Use](#how-to-use)
 
 [About](#about)  
 
