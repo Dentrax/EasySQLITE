@@ -1,3 +1,5 @@
+<h1 align="center">EasySQLite Source Repository</h1>
+
 ### EasySQLITE: An EASY and ADVANCED way to handle SQLITE!
 
 [About](#about)  
