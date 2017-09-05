@@ -37,6 +37,7 @@ public abstract class SQLITEBase {
     protected boolean m_isActive;
 
     public SQLITEBase(Context context, SQLITESetting setting) {
+        this.m_sqlSetting = setting;
         this.m_db_name = setting.DatabaseName;
         this.m_db_version = setting.DatabaseVersion;
         String dbPath = context.getApplicationContext().getDatabasePath(m_db_name).getAbsolutePath();
