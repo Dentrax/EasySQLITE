@@ -30,18 +30,18 @@ Controls and wizards are available for users to:
 * Single Line Initializer
 
 ```java
-SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, SQLITECreateInfo, SQLITEUpgradeInfo));
+SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, SQLITECreateInfos, SQLITEUpgradeInfos));
 ```
 
 ```java
 final List<SQLITECreateInfo> sql_createList = new ArrayList<SQLITECreateInfo>(){{
- //Create a new TABLE with these queries
+ //Create (initialize) a new TABLE with these queries (if not exist)
  add(new SQLITECreateInfo("TABLE1_NAME", new ArrayList<String>(){{
      add("QUERY1");
      add("QUERY2");
  }}));
 
- //Create a new TABLE with these queries
+ //Create (initialize) a new TABLE with these queries (if not exist)
  add(new SQLITECreateInfo("TABLE2_NAME", new ArrayList<String>(){{
      add("QUERY1");
      add("QUERY2");
