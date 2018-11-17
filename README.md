@@ -30,7 +30,7 @@ Controls and wizards are available for users to:
 * Single Line Initializer
 
 ```java
-SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, SQLITECreateInfo, SQLITEUpgradeInfo));**
+SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, SQLITECreateInfo, SQLITEUpgradeInfo));
 ```
 
 ```java
