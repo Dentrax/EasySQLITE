@@ -27,10 +27,13 @@ Controls and wizards are available for users to:
 
 ## How To Use
 
-**Single line initializer : SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, SQLITECreateInfo, SQLITEUpgradeInfo));**
+**Single Line Initializer
 
+```java
+SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, SQLITECreateInfo, SQLITEUpgradeInfo));**
+```
 
-```c#
+```java
 final List<SQLITECreateInfo> sql_createList = new ArrayList<SQLITECreateInfo>(){{
  //Create a new TABLE with these queries
  add(new SQLITECreateInfo("TABLE1_NAME", new ArrayList<String>(){{
