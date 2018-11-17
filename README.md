@@ -27,7 +27,7 @@ Controls and wizards are available for users to:
 
 ## How To Use
 
-**Single Line Initializer
+* Single Line Initializer
 
 ```java
 SQLITE sql = new SQLITE(CONTEXT, new SQLITESetting(DB_NAME, VERSION, SQLITECreateInfo, SQLITEUpgradeInfo));**
